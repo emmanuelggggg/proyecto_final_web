@@ -66,6 +66,14 @@
                 </fieldset>
             </div>
             </form>
+             <div>
+                <h1>Reportes Hechos</h1>
+            </div>
+            <div>
+                <?php
+                    include_once("../templates/tablas.php");
+                ?>
+            </div>
         </div>
     </div>
 </body>
