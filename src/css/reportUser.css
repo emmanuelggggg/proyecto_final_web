@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.containerPadre > div:first-child{
+    width: 100vw;
+    display: flex;
+    height: 60vw;
+    flex-direction: column;
+    background-color: aliceblue;
+    align-items: center;
+    margin: 0;
+}
+.hijo{
+    display: flex;
+}
+.hijo > div:first-child{
+    display: flex;
+}
+.hijo > div:first-child h1{
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500px;
+    text-align:center;
+    letter-spacing: 2px;
+    font-size: 35px;
+    border-bottom: 1px solid #333;
+}
+.hijo > div:nth-child(2) h2{
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500px;
+    text-align:center;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+.hijo > div:nth-child(3){
+    display: block;
+    width: 90vw;
+    height: 10vw;
+    background: url("/src/fotos/denuncia.jpeg") no-repeat center center fixed;
+    background-size: contain;
+    margin-bottom: 45px;
+}
+
+.hijo > div:last-child{
+    display:flex;
+    width:90vw;
+    height: 30vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.form {
+    display: flex;
+    width: 97.5%;
+    height: 94.5%;
+}
+.form > legend {
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500px;
+    text-align:center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.uno{
+    background-color: #eee;
+    width: 200px;
+    height:20px;
+}
+.dos{
+    background-color: #eee;
+    margin-right: 55px;
+}
+
+.texto{
+    background-color:#eee;
+    width: 450px;
+    height: 200px;
+}
+
+.buscador2{
+    display: flex;
+}
+.buscador2 ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+.buscador2 ul li {float: right;}
+
+.buscador2 li a{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.buscador2 li a:hover{background-color: #4CAF50;}  
+
+.buscador2 li h1{
+    margin-right: 1000px;
+}
+.nombreP{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 9px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin :0;
+    height:40px; 
+    border-left: 5px solid #4CAF50;
+    cursor: pointer;
+    transition: 0.3s 0.2s;
+}
+#map{
+    width: 500px; 
+    height: 380px;
+    margin-left:200px;
+}

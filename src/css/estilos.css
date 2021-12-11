@@ -1,0 +1,190 @@
+body{
+    background-color:  #eee;
+    margin: 0;
+}
+
+/* comienza el index.php */
+.contPadre{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("/src/fotos/fondoazul1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+.contPadre > div:first-child{
+  display:flex;
+}
+
+.buscador{
+    display: flex;
+}
+.buscador ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+.buscador ul li {float: right;}
+
+.buscador li a{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.buscador li a:hover{background-color: #4CAF50;}  
+ 
+.buscador li h1{
+   margin-right: 1070px;
+}
+
+.nombreP{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 9px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin :0;
+    height:40px; 
+    border-left: 5px solid #4CAF50;
+    cursor: pointer;
+    transition: 0.3s 0.2s;
+}
+
+
+/* para el anuncio */
+
+.anuncio{
+    padding: 50px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-left:0px;
+}
+
+.mensaje{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.encabezado1{
+    color: #333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+h1{
+    text-align: center;
+}
+
+.mensaje  > button{
+    font-family: 'roboto';
+    background: rgb(5, 34, 79);
+    border: none;
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius:5px;
+    transition: 0.3s 0.2s;
+}
+.mensaje > button:hover{
+    transform: scale(1.2, 1.2);
+    background-color: rgb(91, 177, 176);
+}
+/* aqui termina el index.php */
+
+form{
+    background: white;
+    padding: 40px 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.form{
+    width: 100%;
+    height: 70%;
+    margin:auto;
+}
+
+form .datos{
+    position: relative;
+    margin: 15px;
+}
+.entradas{
+    background: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rebeccapurple;
+}
+input:focus{
+    outline: none;
+    color: black;
+}
+.rol{
+    color: blue;
+    font-size: 16px;
+}
+label{
+    color: blue;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events:none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: blue;
+}
+
+
+.alerta{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: tomato;
+    padding-top: 20px;
+}
+.admins0{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.botonesAdmin{
+    display: flex;
+    flex-direction: row;
+}
+.botonAdmin{
+    margin: 10px;
+}
+@media (max-width:500px){
+    form{
+        width: 80%;
+    }
+}

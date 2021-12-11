@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.contPadre{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("/src/fotos/burbujas.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0px;
+   
+}
+.contPadre > div:first-child{
+    display: flex;
+    flex-direction: column;    
+    padding: 50px;
+    background-color:#eee;
+    border-radius: 10px;
+    margin-left:0px;
+    align-items: left;
+}
+
+.mensaje{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+img{
+    width:80px;
+    height: 90px;
+    border-radius: 100px;
+}
+h1{
+    text-align: center;
+}
+
+p{
+    float: right;
+}
